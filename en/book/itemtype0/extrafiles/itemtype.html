@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>第3章 アイテムタイプモジュールの概要</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.72.0" />
+    <link rel="start" href="index.html" title="XooNIps" />
+    <link rel="up" href="index.html" title="XooNIps" />
+    <link rel="prev" href="item.html" title="第2章 アイテムの概要" />
+    <link rel="next" href="module.html" title="第4章 モジュール管理" />
+  </head>
+  <body>
+    <div id="page">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navheader">
+        <table width="100%" summary="Navigation header">
+          <tr>
+            <td width="20%" align="left"><a accesskey="p" href="item.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <th width="60%" align="center"> </th>
+            <td width="20%" align="right"> <a accesskey="n" href="module.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="chapter" lang="ja" id="itemtype" xml:lang="ja">
+        <div xmlns="" class="titlepage">
+          <div>
+            <div>
+              <h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="itemtype"></a>第3章 アイテムタイプモジュールの概要</h2>
+            </div>
+          </div>
+        </div>
+        <p>アイテムタイプモジュールは，<span class="application">XooNIps</span> 上のアイテム登録，編集，削除などの操作を受けて，操作に対応した画面の作成，DB の操作などを行なう <span class="application">XOOPS</span> のモジュールです．したがってアイテムタイプを追加するには <span class="application">XOOPS</span> にモジュールをインストールできる権限が必要となります．</p>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="itemtype.callback"></a>1. コールバック関数</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテムの登録や編集等の，アイテムタイプごとに異なる画面や DB 操作が必要な場合には，システムがアイテムタイプの関数をコールバックして画面や DB 操作を要求します．コールバックする関数の名前，引数などは予め決まっていますので，アイテムタイプ作成者はそれに従って関数を定義します．</p>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="itemtype.view"></a>2. 画面の作成</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテムの登録，編集，表示などの画面を表示するための HTML は，アイテムタイプモジュールが生成します．作成した画面は XOOPS の中央部のカラムに挿入されます． </p>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="itemtype.op"></a>3. データ操作</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテムの登録，更新，削除，検索のデータ操作機能はアイテムタイプモジュールで実装します．ただし Basic Information の操作は共通ライブラリに予め用意されているので，アイテムタイプモジュールからその機能を呼び出して行ないます．Detail Information の操作についてはアイテム ID の対応づけ以外に規定はありません．他のアイテムタイプやシステムに影響を与えないものであれば，Detail Information をどのような方法で管理しても問題ありません．</p>
+        </div>
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navfooter">
+        <hr />
+        <table width="100%" summary="Navigation footer">
+          <tr>
+            <td width="40%" align="left"><a accesskey="p" href="item.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <td width="20%" align="center"> </td>
+            <td width="40%" align="right"> <a accesskey="n" href="module.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+          <tr>
+            <td width="40%" align="left" valign="top"> </td>
+            <td width="20%" align="center">
+              <a accesskey="h" href="index.html">
+                <img src="images\home.gif" alt="ホーム" />
+              </a>
+            </td>
+            <td width="40%" align="right" valign="top"> </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lastupdated">Last updated: 2010/04/15</div>
+    </div>
+  </body>
+</html>

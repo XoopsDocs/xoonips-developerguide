@@ -1,18 +1,18 @@
 ### _XOOPS Documentation Series_
-![logoXoops.jpg](en/assets/logoXoops.jpg)
+![logoXoops.jpg](assets/logoXoops.jpg)
 
 # XooNIps Developer Guide
-#### for XOOPS 2.5.9
+#### for XOOPS 2.5.8
 
-Module Version 3.45
+Module Version 3.40
 
 Tutorial Version 3.40
       
-![logoModule.png](/en/assets/logoModule.png)
+![logoModule.png](assets/logoModule.png)
             
 ## Developer Guide
 
-(c) 2018 XOOPS Project ([www.xoops.org](https://xoops.org)),   [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)   
+© 2016 XOOPS Project ([www.xoops.org](https://xoops.org)),   [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)   
 
 ## Tutorial Purpose 
 
@@ -20,7 +20,7 @@ This document describes the creation process of the item type module (hereinafte
 
 To create XOOPS module, PHP and MySQL know-how is required.
 
-![image001.png](en/assets/image001.png)
+![image001.png](assets/image001.png)
 *Figure 1: Main view of the XooNIps Architecture*
 
 ## Download/Fork the Module ![](https://xoops.org/images/forkit.png) 
@@ -35,7 +35,7 @@ Editing the book can be done either by updating the markdown files with a text e
 
 # Table of Content
 
-* [Item Type Module Creation Guide](book/itemtype/intro.md)
+* [Item Type Module Creation Guide](book/itemtype2/intro.md)
 * [Common Library Function List Guide](book/commonlib/intro.md)
 * [Credits](book/9credits.md)
 * [About XOOPS CMS](book/10aboutxoops.md)

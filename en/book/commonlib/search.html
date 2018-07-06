@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>第10章 検索</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.72.0" />
+    <link rel="start" href="index.html" title="XooNIps" />
+    <link rel="up" href="index.html" title="XooNIps" />
+    <link rel="prev" href="metainfo.html" title="第9章 メタ情報" />
+    <link rel="next" href="oaipmh.html" title="第11章 OAI-PMH" />
+  </head>
+  <body>
+    <div id="page">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navheader">
+        <table width="100%" summary="Navigation header">
+          <tr>
+            <td width="20%" align="left"><a accesskey="p" href="metainfo.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <th width="60%" align="center"> </th>
+            <td width="20%" align="right"> <a accesskey="n" href="oaipmh.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="chapter" lang="ja" id="search" xml:lang="ja">
+        <div xmlns="" class="titlepage">
+          <div>
+            <div>
+              <h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="search"></a>第10章 検索</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationAdvancedSearchBlock"></a>1. array xnpGetBasicInformationAdvancedSearchBlock( string modulename, array &amp;search_var )</h2>
+              </div>
+            </div>
+          </div>
+          <p>AdvancedSearch 画面用の HTML を生成する．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationAdvancedSearchBlock-view"></a>1.1. 画面</h3>
+                </div>
+              </div>
+            </div>
+            <div class="blockquote">
+              <blockquote class="blockquote">
+                <div class="informalfigure">
+                  <div class="mediaobject">
+                    <img src="images\xnpGetBasicInformationAdvancedSearchBlock.gif" />
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationAdvancedSearchBlock-retval"></a>1.2. 戻り値</h3>
+                </div>
+              </div>
+            </div>
+            <p>以下の構造の連想配列を返す．</p>
+            <div class="blockquote">
+              <blockquote class="blockquote">
+                <pre class="programlisting">array(
+    "(カラム名1)" =&gt; array( 
+        'name'=&gt;"(カラム名HTML1)", 'value'=&gt;"(カラム値HTML1)" ),
+    "(カラム名2)" =&gt; array(
+        'name'=&gt;"(カラム名HTML2)", 'value'=&gt;"(カラム値HTML2)" ),
+    (以下同様)
+);</pre>
+              </blockquote>
+            </div>
+            <p>ここで (カラム名n) は，'title', 'keywords', 'description', 'doi', 'publication_date', 'publication_year', 'publication_month', 'publication_mday' のいずれかである．</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationAdvancedSearchBlock-putval"></a>1.3. 送信データ</h3>
+                </div>
+              </div>
+            </div>
+            <div class="itemizedlist">
+              <ul type="disc">
+                <li>
+                  <p>$_POST['(モジュール名)_title']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_keywords']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_description']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_doi']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_from']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_fromYear']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_fromMonth']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_fromDay']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_to']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_toYear']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_toMonth']</p>
+                </li>
+                <li>
+                  <p>$_POST['(モジュール名)_publication_date_toDay']</p>
+                </li>
+              </ul>
+            </div>
+            <p>※ この関数は，以上全ての $_POST[] のキーを配列 $search_var に追加します．</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationAdvancedSearchQuery"></a>2. string xnpGetBasicInformationAdvancedSearchQuery( string moduleName )</h2>
+              </div>
+            </div>
+          </div>
+          <p>モジュール名と $_POST 変数から，Basic Information を検索するような SQL の条件式を作って返す．</p>
+          <p>条件の入力が無い場合は，空文字列を返す．</p>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetKeywordQuery"></a>3. string xnpGetKeywordQuery ( string dbVarName, string postVarName )</h2>
+              </div>
+            </div>
+          </div>
+          <p>DB のカラム名と Keyword から SQL の条件式を作って返す．</p>
+          <p>Keyword として，$_POST[$postVarName] を使用する．</p>
+          <p>「DBのカラムが Keyword 内の全ての単語を含む」を表すような条件式を返す．</p>
+          <p>検索条件が入力されていない場合は空文字列を返す．</p>
+          <div class="blockquote">
+            <blockquote class="blockquote">
+              <pre class="programlisting">例:
+
+$_POST[$postVarName] = 'foo "bar's fobar"'
+$dbVarName = 'xoops_xnpdummy_item_detail.title'
+
+とすると，戻り値は
+
+"xoops_xnpdummy_item_detail.title like '%foo%' AND 
+ xoops_xnpdummy_item_detail.title like '%bar\'s fobar%'"
+
+となる．</pre>
+            </blockquote>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetKeywordQuery-inpval"></a>3.1. 入力</h3>
+                </div>
+              </div>
+            </div>
+            <div class="itemizedlist">
+              <ul type="disc">
+                <li>
+                  <p>dbVarName : DB のテーブル名.カラム名</p>
+                </li>
+                <li>
+                  <p>postVarName : POST された Keyword 変数名</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetKeywordQuery-retval"></a>3.2. 戻り値</h3>
+                </div>
+              </div>
+            </div>
+            <p>SQL の条件式</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetKeywordsQueries"></a>4. array xnpGetKeywordsQueries( array dbVarNames, array keywords )</h2>
+              </div>
+            </div>
+          </div>
+          <p>DB のカラム名と Keyword から SQL の条件式の配列を作って返す．</p>
+          <p>戻り値の配列の [N] は，「dbVarNames の内の少なくとも 1つのカラムが Keywords[N] の文字列を含む」を意味するような条件式となる．</p>
+          <div class="blockquote">
+            <blockquote class="blockquote">
+              <pre class="programlisting">例:
+
+$keywords = array('keyword1', 'keyword2' )
+$dbVarNames = array( 'table1.column1', 'table2.column2' )
+
+とすると，戻り値は
+
+array(
+  'table1.column1 like '%keyword1%' or table2.column2 like '%keyword1%',
+  'table1.column1 like '%keyword2%' or table2.column2 like '%keyword2%',
+)
+
+となる．</pre>
+            </blockquote>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetKeywordsQueries-inpval"></a>4.1. 入力</h3>
+                </div>
+              </div>
+            </div>
+            <div class="itemizedlist">
+              <ul type="disc">
+                <li>
+                  <p>dbVarNames : DB のテーブル名.カラム名 の配列</p>
+                </li>
+                <li>
+                  <p>keywords : Keywordの配列</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetKeywordsQueries-retval"></a>4.2. 戻り値</h3>
+                </div>
+              </div>
+            </div>
+            <p>SQL の条件式の配列</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpKeywordsToFulltextSql"></a>5. array xnpKeywordsToFulltextSql( keywords )</h2>
+              </div>
+            </div>
+          </div>
+          <p>keywordから、ファイル内検索用SQLの一部を作成する．</p>
+          <p>この関数は array(expression, errorMessage) を返す． この expression を利用したSQL式
+        </p>
+          <pre class="programlisting">match ( xoops_xoonips_file.search_text ) against ( '$expression' in boolean mode ) </pre>
+          <p>
+        は、「xoops_xoonips_fileテーブルのsearch_textカラム が、 keyword で指定された文字列を含む」という意味になる．
+      </p>
+          <p></p>
+          <p></p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpKeywordsToFulltextSql-inpval"></a>5.1. 入力</h3>
+                </div>
+              </div>
+            </div>
+            <div class="itemizedlist">
+              <ul type="disc">
+                <li>
+                  <p>keyword : 入力キーワード．論理式(括弧, AND, OR)を使った検索が使用可能．""で囲ってフレーズ検索をすることも可能．</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpKeywordsToFulltextSql-retval"></a>5.2. 戻り値</h3>
+                </div>
+              </div>
+            </div>
+            <p>array( expression, errorMessage ) </p>
+            <div class="itemizedlist">
+              <ul type="disc">
+                <li>
+                  <p>expression : SQL式の一部． " select .... match ( ... ) against ( $expression in boolean mode )" といった形で使用可能</p>
+                </li>
+                <li>
+                  <p>errorMessage : エラーメッセージ．成功ならerrorMessage==false</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navfooter">
+        <hr />
+        <table width="100%" summary="Navigation footer">
+          <tr>
+            <td width="40%" align="left"><a accesskey="p" href="metainfo.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <td width="20%" align="center"> </td>
+            <td width="40%" align="right"> <a accesskey="n" href="oaipmh.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+          <tr>
+            <td width="40%" align="left" valign="top"> </td>
+            <td width="20%" align="center">
+              <a accesskey="h" href="index.html">
+                <img src="images\home.gif" alt="ホーム" />
+              </a>
+            </td>
+            <td width="40%" align="right" valign="top"> </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lastupdated">Last updated: 2010/04/15</div>
+    </div>
+  </body>
+</html>

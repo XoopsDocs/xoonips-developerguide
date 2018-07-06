@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>第14章 補足: Attachment, TextFile 系関数の $name 引数について</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.72.0" />
+    <link rel="start" href="index.html" title="XooNIps" />
+    <link rel="up" href="index.html" title="XooNIps" />
+    <link rel="prev" href="others.html" title="第13章 その他" />
+    <link rel="next" href="changelog.html" title="第15章 変更履歴" />
+  </head>
+  <body>
+    <div id="page">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navheader">
+        <table width="100%" summary="Navigation header">
+          <tr>
+            <td width="20%" align="left"><a accesskey="p" href="others.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <th width="60%" align="center"> </th>
+            <td width="20%" align="right"> <a accesskey="n" href="changelog.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="chapter" lang="ja" id="auxil" xml:lang="ja">
+        <div xmlns="" class="titlepage">
+          <div>
+            <div>
+              <h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="auxil"></a>第14章 補足: Attachment, TextFile 系関数の $name 引数について</h2>
+            </div>
+          </div>
+        </div>
+        <p>※ 1つのアイテムは，複数の Attachment/TextFile を持つことが可能です．</p>
+        <p>※ 複数の入力欄を区別するため，Attachment/TextFile 系の関数は $name 引数を持ちます．</p>
+        <p>※ $name は，予め xoops_xoonips_file_type の name カラムに登録しておく必要があります．</p>
+        <p>※ nameの登録は，モジュールインストール時に実行される <code class="filename">sql/mysql.sql</code> に INSERT 文を定義して登録できます．</p>
+        <p>以下の $name は予約済みです．</p>
+        <div class="itemizedlist">
+          <ul type="disc">
+            <li>
+              <p>'preview'</p>
+            </li>
+          </ul>
+        </div>
+        <p>以下の $name は既に登録済みなので，新規に登録する必要はありません．</p>
+        <div class="itemizedlist">
+          <ul type="disc">
+            <li>
+              <p>'readme'</p>
+            </li>
+            <li>
+              <p>'license'</p>
+            </li>
+            <li>
+              <p>'rights'</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navfooter">
+        <hr />
+        <table width="100%" summary="Navigation footer">
+          <tr>
+            <td width="40%" align="left"><a accesskey="p" href="others.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <td width="20%" align="center"> </td>
+            <td width="40%" align="right"> <a accesskey="n" href="changelog.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+          <tr>
+            <td width="40%" align="left" valign="top"> </td>
+            <td width="20%" align="center">
+              <a accesskey="h" href="index.html">
+                <img src="images\home.gif" alt="ホーム" />
+              </a>
+            </td>
+            <td width="40%" align="right" valign="top"> </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lastupdated">Last updated: 2010/04/15</div>
+    </div>
+  </body>
+</html>

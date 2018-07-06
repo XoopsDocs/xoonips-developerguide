@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>第3章 Basic Information</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="generator" content="DocBook XSL Stylesheets V1.72.0" />
+    <link rel="start" href="index.html" title="XooNIps" />
+    <link rel="up" href="index.html" title="XooNIps" />
+    <link rel="prev" href="notice.html" title="第2章 注意事項" />
+    <link rel="next" href="itemindex.html" title="第4章 Index" />
+  </head>
+  <body>
+    <div id="page">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navheader">
+        <table width="100%" summary="Navigation header">
+          <tr>
+            <td width="20%" align="left"><a accesskey="p" href="notice.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <th width="60%" align="center"> </th>
+            <td width="20%" align="right"> <a accesskey="n" href="itemindex.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="chapter" lang="ja" id="basicinfo" xml:lang="ja">
+        <div xmlns="" class="titlepage">
+          <div>
+            <div>
+              <h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="basicinfo"></a>第3章 Basic Information</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="basicinfo.datastructure"></a>1. Basic Informationのデータ構造</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテムの Basic Information のフォームを生成します．戻り値の構造は以下の通りです．フォームの一部を構成する HTML が格納されます．</p>
+          <pre class="programlisting">array $basic;
+$basic['title']             タイトル
+$basic['contributor']       アイテム作成者名
+$basic['keywords']          キーワード
+$basic['description']       コメント
+$basic['doi']               DOI
+$basic['last_update_date']  最終更新日
+$basic['creation_date']     アイテム作成日
+$basic['item_type']         アイテムタイプ名
+$basic['change_logs']       これまでの変更履歴
+$basic['change_log']        変更内容(変更履歴に追加される)
+$basic['publication_date']  年月日 (※)
+$basic['publication_year']  年 (※)
+$basic['publication_month'] 月 (※)
+$basic['publication_mday']  日 (※)
+$basic['uid']               ユーザID
+$basic['related_to']        関連アイテム
+$basic['lang']              言語 
+      </pre>
+          <p>(※) publication_dateは，publication_year, publication_month, publication_mdayをあわせたものです．登録，編集なら年月日を一度に設定できます．確認，詳細表示の場合は年月日の文字列です．</p>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="basicinfo.formdatastructure"></a>2. Basic Informationのフォームデータ構造</h2>
+              </div>
+            </div>
+          </div>
+          <p>送信されるアイテムの Basic Information フォームデータは以下の構造です．</p>
+          <div class="table">
+            <a id="table.basicinfo.formdatastructure"></a>
+            <p class="title">
+              <b>表 3.1. フォームデータ構造</b>
+            </p>
+            <div class="table-contents">
+              <table summary="フォームデータ構造" cellspacing="0" cellpadding="5" border="0" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">名前</th>
+                    <th style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">内容</th>
+                    <th style="border-bottom: 0.5pt solid black; " align="left">備考</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">item_type_id</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">アイテムタイプID</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">title</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">タイトル</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">keywords</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">キーワード</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">description</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">コメント</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">doi</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">DOI</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">change_log</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">変更内容</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left">変更履歴に追加される</td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">PublicationDateYear</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">年</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">PublicationDateMonth</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">月</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">PublicationDateDay</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">日</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">lang</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">言語</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">related_to</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">関連アイテム</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">related_to_check</td>
+                    <td style="border-right: 0.5pt solid black; border-bottom: 0.5pt solid black; " align="left">関連アイテム</td>
+                    <td style="border-bottom: 0.5pt solid black; " align="left"> </td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 0.5pt solid black; " align="left">related_to_check_all</td>
+                    <td style="border-right: 0.5pt solid black; " align="left">関連アイテム</td>
+                    <td style="" align="left"> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break" />
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationDetailBlock"></a>3. array xnpGetBasicInformationDetailBlock( int item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテム詳細表示に必要な Basic Information を返します． </p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationDetailBlock-postvar"></a>3.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationDetailBlock-view"></a>3.2. 画面</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationDetailBlock-putvar"></a>3.3. 送信データ</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationEditBlock"></a>4. array xnpGetBasicInformationEditBlock( int item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテム編集画面のフォームを生成します．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationEditBlock-postvar"></a>4.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p><a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>のフォームデータをフォームの初期値に使用します．</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationEditBlock-view"></a>4.2. 画面</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationEditBlock-putvar"></a>4.3. 送信データ</h3>
+                </div>
+              </div>
+            </div>
+            <p>
+              <a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>
+            </p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationConfirmBlock"></a>5. array xnpGetBasicInformationConfirmBlock( int item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテム登録，アイテム編集時の内容確認画面に表示するフォームを生成します．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationConfirmBlock-postvar"></a>5.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p><a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>のフォームデータを確認画面に表示します．</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationConfirmBlock-view"></a>5.2. 画面</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationConfirmBlock-putvar"></a>5.3. 送信データ</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpGetBasicInformationRegisterBlock"></a>6. array xnpGetBasicInformationRegisterBlock()</h2>
+              </div>
+            </div>
+          </div>
+          <p>登録画面，編集画面に表示する Basic Information のフォームを作成します．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationRegisterBlock-postvar"></a>6.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p>
+          <a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>の値をフォームの初期値に使用します．
+        </p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationRegisterBlock-view"></a>6.2. 画面</h3>
+                </div>
+              </div>
+            </div>
+            <p>なし</p>
+          </div>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpGetBasicInformationRegisterBlock-putvar"></a>6.3. 送信データ</h3>
+                </div>
+              </div>
+            </div>
+            <p>
+              <a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>
+            </p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpInsertBasicInformation"></a>7. bool xnpInsertBasicInformation( int &amp;item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>Basic Information をデータベースに登録します．アイテムのIDを引数 item_id に代入します．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpInsertBasicInformation-postvar"></a>7.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p><a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>の情報をデータベースに記録します．</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpUpdateBasicInformation"></a>8. bool xnpUpdateBasicInformation( int item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>アイテムの Basic Information を，引数 item_id で指定されたアイテムに上書きします．</p>
+          <div class="section" lang="ja" xml:lang="ja">
+            <div xmlns="" class="titlepage">
+              <div>
+                <div>
+                  <h3 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="func-xnpUpdateBasicInformation-postvar"></a>8.1. 内部で参照する $_POST 変数</h3>
+                </div>
+              </div>
+            </div>
+            <p><a href="basicinfo.html#table.basicinfo.formdatastructure" title="表 3.1. フォームデータ構造">表 3.1. 「フォームデータ構造」</a>の変数の内容をデータベースに上書きします．</p>
+          </div>
+        </div>
+        <div class="section" lang="ja" xml:lang="ja">
+          <div xmlns="" class="titlepage">
+            <div>
+              <div>
+                <h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="func-xnpDeleteBasicInformation"></a>9. bool xnpDeleteBasicInformation( int item_id )</h2>
+              </div>
+            </div>
+          </div>
+          <p>引数 item_id で指定されたアイテムの Basic Information とそのアイテムに関連するファイル(添付ファイル，画像ファイル)を削除します．</p>
+          <p>成功なら true を返します．</p>
+        </div>
+      </div>
+      <div xmlns="http://www.w3.org/1999/xhtml" class="navfooter">
+        <hr />
+        <table width="100%" summary="Navigation footer">
+          <tr>
+            <td width="40%" align="left"><a accesskey="p" href="notice.html"><img src="images\prev.gif" alt="前のページ" /></a> </td>
+            <td width="20%" align="center"> </td>
+            <td width="40%" align="right"> <a accesskey="n" href="itemindex.html"><img src="images\next.gif" alt="次のページ" /></a></td>
+          </tr>
+          <tr>
+            <td width="40%" align="left" valign="top"> </td>
+            <td width="20%" align="center">
+              <a accesskey="h" href="index.html">
+                <img src="images\home.gif" alt="ホーム" />
+              </a>
+            </td>
+            <td width="40%" align="right" valign="top"> </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lastupdated">Last updated: 2010/04/15</div>
+    </div>
+  </body>
+</html>
