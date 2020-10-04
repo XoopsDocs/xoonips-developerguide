@@ -1,6 +1,6 @@
-# XOOPS Documentation Series
+# アイテムタイプモジュール作成手順書
 
-![](../.gitbook/assets/logoXoops%20%282%29.jpg)
+![](.gitbook/assets/logoXoops%20%282%29.jpg)
 
 ## XooNIps Developer Guide
 
@@ -10,7 +10,7 @@ Module Version 3.40
 
 Tutorial Version 3.40
 
-![](../.gitbook/assets/logoModule%20%282%29.png)
+![](.gitbook/assets/logoModule%20%282%29.png)
 
 ### Developer Guide
 
@@ -22,7 +22,7 @@ This document describes the creation process of the item type module \(hereinaft
 
 To create XOOPS module, PHP and MySQL know-how is required.
 
-![](../.gitbook/assets/image001%20%282%29.png) _Figure 1: Main view of the XooNIps Architecture_
+![](.gitbook/assets/image001%20%282%29.png) _Figure 1: Main view of the XooNIps Architecture_
 
 ### Download/Fork the Module ![](https://xoops.org/images/forkit.png)
 
