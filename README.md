@@ -4,7 +4,7 @@
 
 ## XooNIps Developer Guide
 
-#### for XOOPS 2.5.9
+#### for XOOPS 2.5.10+ & XCube
 
 Module Version 3.45
 
@@ -14,7 +14,7 @@ Tutorial Version 3.40
 
 ### Developer Guide
 
-\(c\) 2018 XOOPS Project \([www.xoops.org](https://xoops.org)\), [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)
+\(c\) 2020 XOOPS Project \([www.xoops.org](https://xoops.org)\), [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)
 
 ### Tutorial Purpose
 
