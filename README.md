@@ -20,9 +20,11 @@ Tutorial Version 3.40
 
 This document describes the creation process of the item type module \(hereinafter the System\) that is needed for XooNIps.
 
-To create XOOPS module, PHP and MySQL know-how is required.
+To create XOOPS module, PHP and MySQL know-how is required. 
 
-![](.gitbook/assets/image001%20%282%29.png) _Figure 1: Main view of the XooNIps Architecture_
+![](.gitbook/assets/image.png)
+
+_Figure 1: Main view of the XooNIps Architecture_
 
 ### Download/Fork the Module ![](https://xoops.org/images/forkit.png)
 
