@@ -61,9 +61,9 @@
 
 * [Copyright notice](6.-copyright-notice/copyright-notice.md)
 
-## Appendixes <a id="appendixes."></a>
+## Appendixes
 
-* [Appendix A](appendixes./appendix-a/README.md)
-  * [1. Organizations](appendixes./appendix-a/1.-organizations.md)
-  * [2. XooNIps based Online Databases](appendixes./appendix-a/2.-xoonips-based-online-databases.md)
+* [Appendix A](appendixes/appendix-a/README.md)
+  * [1. Organizations](appendixes/appendix-a/1.-organizations.md)
+  * [2. XooNIps based Online Databases](appendixes/appendix-a/2.-xoonips-based-online-databases.md)
 
