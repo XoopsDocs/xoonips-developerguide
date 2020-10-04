@@ -37,9 +37,9 @@ Editing the book can be done either by updating the markdown files with a text e
 ## Table of Content
 
 * [Item Type Module Creation Guide](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/en/book/itemtype2/intro.md)
-* [Common Library Function List Guide](book/commonlib/intro.md)
-* [Credits](book/9credits.md)
-* [About XOOPS CMS](book/10aboutxoops.md)
+* [Common Library Function List Guide]()
+* [Credits]()
+* [About XOOPS CMS]()
 
 ### License:
 

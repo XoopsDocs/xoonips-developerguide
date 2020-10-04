@@ -2,7 +2,7 @@
 
 ## Item type module creation procedure manual
 
-* [About this document](book/itemtype/intro.md)
+* [About this document]()
 * [Overview of items](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/en/book/itemtype/item.md)
 
     Basic Information
@@ -11,7 +11,7 @@
 
     en correspondence of Basic Information and Detail Information
 
-* [Overview of the item type module](book/itemtype/itemtype.md)
+* [Overview of the item type module]()
 
     callback function
 
@@ -19,7 +19,7 @@
 
     data manipulation
 
-* [The module management](book/itemtype/module.md)
+* [The module management]()
 
      installation process
 
@@ -27,7 +27,7 @@
 
      uninstall process
 
-* [ORM object](book/itemtype/orm.md)
+* [ORM object]()
 
     implementation of the data class
 
@@ -178,18 +178,18 @@
      1.2. Generation of metadata
 
   2. Download previous agreement request
-* [2. presence or absence of a license agreement request](book/itemtype/)
+* [2. presence or absence of a license agreement request]()
   1. presence or absence of a download of notification
   2. agreement request block
   3. change history
 
      **Common library function list**
-* [1.First of all](book/commonlib/intro.md)
+* [1.First of all]()
   1. type function\_name\( argument, …. \)
-* [2. Notes](book/commonlib/notice-1.md)
+* [2. Notes]()
   1. function name rules
   2. Notes of form generation function
-* [3. Basic Information](book/commonlib/basicinfo-1.md)
+* [3. Basic Information]()
   1. Data structure of Basic Information
   2. form data structure of Basic Information
   3. array xnpGetBasicInformationDetailBlock\( int item\_id \)
@@ -199,7 +199,7 @@
   7. bool xnpInsertBasicInformation\( int &item\_id \)
   8. bool xnpUpdateBasicInformation\( int item\_id \)
   9. bool xnpDeleteBasicInformation\( int item\_id \)
-* [4. Index](book/commonlib/itemindex-1.md)
+* [4. Index]()
   1. array xnpGetIndexDetailBlock\( int item\_id, bool button\_flag = true \)
   2. array xnpGetIndexEditBlock\( int item\_id \)
   3. array xnpGetIndexConfirmBlock\( int item\_id \)
@@ -207,7 +207,7 @@
   5. xnpInsertIndex: \(none\)
   6. bool xnpUpdateIndex\( int item\_id \)
   7. xnpDeleteIndex: \(none\)
-* [5. Preview](book/commonlib/preview.md)
+* [5. Preview]()
   1. array xnpGetPreviewDetailBlock\( int item\_id \)
   2. array xnpGetPreviewEditBlock\( int item\_id \)
   3. array xnpGetPreviewConfirmBlock\( int item\_id \)
@@ -215,7 +215,7 @@
   5. xnpInsertPreview: \(none\)
   6. bool xnpUpdatePreview\( int item\_id \)
   7. xnpDeletePreview: \(none\)
-* [6. Attachment](book/commonlib/attachment-1.md)
+* [6. Attachment]()
   1. array xnpGetAttachmentDetailBlock\( int item\_id, string name \)
   2. array xnpGetAttachmentEditBlock\( int item\_id, string name \)
   3. array xnpGetAttachmentConfirmBlock\( int item\_id, string name \)
@@ -230,22 +230,22 @@
   12. bool xnpGetDownloadNotificationOptionEditBlock\( string dirname, int option \)
   13. bool xnpGetDownloadNotificationOptionConfirmBlock\( string dirname \)
   14. bool xnpGetDownloadConfirmationBlock\( int item\_id, int download\_file\_id, bool attachment\_dl\_notify, bool use\_license, int use\_cc, string rights \)
-* [7. TextFile](book/commonlib/textfile-1.md)
+* [7. TextFile]()
   1. array xnpGetTextFileDetailBlock\( int item\_id, string name, string text \)
   2. array xnpGetTextFileEditBlock\( int item\_id, string name, string text \)
   3. array xnpGetTextFileConfirmBlock\( int item\_id, string name, int maxlen=65535 \)
   4. array xnpGetTextFileRegisterBlock\( string name \)
   5. string xnpGetTextFile\( string name \)
-* [8. Rights](book/commonlib/rights-1.md)
+* [8. Rights]()
   1. array xnpGetRightsDetailBlock\( int item\_id, int use\_cc=1, string text='', int cc\_commercial\_use=1, int cc\_modification=2 \)\)
   2. array xnpGetRightsEditBlock\( int item\_id, int use\_cc=1, string text='', int cc\_commercial\_use=1, int cc\_modification=2 \)\)
   3. array xnpGetRightsConfirmBlock\( int item\_id, int maxlen=65535 \)\)
   4. array xnpGetRightsRegisterBlock\( \)\)
   5. array xnpGetRights\(\)\)
-* [9. meta-information](book/commonlib/metainfo-1.md)
+* [9. meta-information]()
   1. array xnpGetBasicInformationArray\( int item\_id \)
   2. bool xnpBasicInformation2XML\( resource fhdl, array item, bool is\_absolute, int base\_index\_id=false \)
-* [10. Search](book/commonlib/search-1.md)
+* [10. Search]()
 
     array xnpGetBasicInformationAdvancedSearchBlock\( string modulename, array &search\_var \)
 
@@ -257,9 +257,9 @@
 
     array xnpKeywordsToFulltextSql\( keywords \)
 
-* [11. OAI-PMH](book/commonlib/oaipmh-1.md)
+* [11. OAI-PMH]()
   1. string xnpGetBasicInformationMetadata\( string metadataPrefix, int item\_id \)
-* [12. The system limits the number of characters](book/commonlib/lengthlimit.md)
+* [12. The system limits the number of characters]()
 
     array xnpTrimString\( string str, int length, string enc=null \)
 
@@ -273,7 +273,7 @@
 
     string xnpWithinWithoutHtml\( string within, string without \)
 
-* [13. Other](book/commonlib/others-1.md)
+* [13. Other]()
   1. double xnpGetTotalFileSize\( array iids \)
   2. bool xnpIsPending\( int item\_id \)
   3. string xnpGetTopBlock\( string moduleName, string displayName, string iconPath, string explanation, string subtypeVarName, array subtypes \)
@@ -281,8 +281,8 @@
   5. string xnpISO8601\( int year, int month, int day \)
   6. string xnpDate\( int year, int month, int day \)
   7. bool xnpExportFile\( string export\_path, resource fhdl, int item\_id \)
-* [14. Supplement: Attachment, for $ name argument of TextFile system function](book/commonlib/auxil.md)
-* [15. Biangenglvli](book/commonlib/changelog.md)
-* [Credits](book/9credits.md)
-* [About XOOPS CMS](book/10aboutxoops.md)
+* [14. Supplement: Attachment, for $ name argument of TextFile system function]()
+* [15. Biangenglvli]()
+* [Credits]()
+* [About XOOPS CMS]()
 
