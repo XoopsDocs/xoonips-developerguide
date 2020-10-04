@@ -57,7 +57,7 @@
 
 * [About XOOPS CMS](about-xoops-cms.md)
 
-## 6\) Copyright notice <a id="6.-copyright-notice"></a>
+## Copyright notice <a id="6.-copyright-notice"></a>
 
 * [Copyright notice](6.-copyright-notice/copyright-notice.md)
 
