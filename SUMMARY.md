@@ -53,9 +53,7 @@
 
 ## About XOOPS
 
----
-
-* [About XOOPS CMS](about-xoops-cms.md)
+* [About XOOPS CMS](about-xoops/about-xoops-cms.md)
 
 ## 6\) Copyright notice <a id="6.-copyright-notice"></a>
 
