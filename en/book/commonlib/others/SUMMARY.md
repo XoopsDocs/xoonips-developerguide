@@ -1,3 +1,0 @@
-# Summary
-
-* [others](README.md)

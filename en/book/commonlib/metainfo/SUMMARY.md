@@ -1,3 +1,0 @@
-# Summary
-
-* [metainfo](README.md)
