@@ -1,3 +1,0 @@
-# Summary
-
-* [search](README.md)

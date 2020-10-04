@@ -1,3 +1,0 @@
-# Summary
-
-* [basicinfo](README.md)
