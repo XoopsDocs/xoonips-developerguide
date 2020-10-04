@@ -1,3 +1,0 @@
-# Summary
-
-* [notice](README.md)
