@@ -1,20 +1,20 @@
 # XOOPS Documentation Series
 
-![](.gitbook/assets/logoXoops%20%282%29.jpg)
+![logoXoops.jpg](../../.gitbook/assets/logoXoops%20%282%29.jpg)
 
 ## XooNIps Developer Guide
 
 #### for XOOPS 2.5.9
 
-Module Version 3.45
+Module Version 3.40
 
 Tutorial Version 3.40
 
-![logoModule.png](.gitbook/assets/logoModule%20%282%29.png)
+![logoModule.png](../../.gitbook/assets/logoModule%20%282%29.png)
 
 ### Developer Guide
 
-\(c\) 2018 XOOPS Project \([www.xoops.org](https://xoops.org)\), [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)
+© 2018 XOOPS Project \([www.xoops.org](https://xoops.org)\), [XooNIps](http://xoonips.osdn.jp/), [Riken](http://www.riken.jp/)
 
 ### Tutorial Purpose
 
@@ -22,7 +22,7 @@ This document describes the creation process of the item type module \(hereinaft
 
 To create XOOPS module, PHP and MySQL know-how is required.
 
-![](.gitbook/assets/image001%20%282%29.png) _Figure 1: Main view of the XooNIps Architecture_
+![](../../.gitbook/assets/image001%20%282%29.png) _Figure 1: Main view of the XooNIps Architecture_
 
 ### Download/Fork the Module ![](https://xoops.org/images/forkit.png)
 
@@ -36,10 +36,10 @@ Editing the book can be done either by updating the markdown files with a text e
 
 ## Table of Content
 
-* [Item Type Module Creation Guide](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/itemtype/intro.md)
-* [Common Library Function List Guide](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/commonlib/intro.md)
-* [Credits](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/9credits.md)
-* [About XOOPS CMS](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/10aboutxoops.md)
+* [Item Type Module Creation Guide](itemtype/intro.md)
+* [Common Library Function List Guide](commonlib/intro.md)
+* [Credits](9credits.md)
+* \[About XOOPS CMS\]10aboutxoops.md\)
 
 ### License:
 
