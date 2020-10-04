@@ -36,12 +36,7 @@ _Figure 1: Main view of the XooNIps Architecture_
 
 Editing the book can be done either by updating the markdown files with a text editor, or opening the repository in [the Gitbook desktop app](https://github.com/GitbookIO/editor/blob/master/README.md). The desktop app will give you a live preview option.
 
-## Table of Content
-
-* [Item Type Module Creation Guide](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/itemtype/intro.md)
-* [Common Library Function List Guide](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/commonlib/intro.md)
-* [Credits](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/9credits.md)
-* [About XOOPS CMS](https://github.com/XoopsDocs/xoonips-developerguide/tree/a6a58e91b3c2fbad05284b6a55d66570e12e94d6/book/10aboutxoops.md)
+## 
 
 ### License:
 
